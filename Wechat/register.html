@@ -1,0 +1,235 @@
+<!--
+<pre>
+
+                    ,EWWEDEWKE.
+               . :WE       :  .KE.
+               DK ,: :     K, : : E,
+              K   ,K:G     K    EE .W
+            f: .;   KK     W    .W ; Di
+           E.:K ;  t i.    E t D Wj . ,G
+          E .  Ei  G          t  W  jf ::
+         G GE  GDj .; ,;,,,,, :  t ,K .E;j
+         j; fK  E  KK;KKKKKKW,KW  ,W  W  L.
+        E WWE:W.  KKK;KKKKKKW,KKW. , jD f;E
+       L   KW L. KKKK;WKEKKKK,KKKW   Kf .  L
+       DE.  EK  WKKKK;t  KKKK,WKKKK     EK,E
+      E EE.f  .KKKKKKKKKKKKKWKKKKKKE. KWj:i.K
+      Di.K  ..KKKKKKKtKKKKKKKKWGKKKKW   .   K
+     j    ED.KEKKKD   . jKtW,KKE.KEKKK.D;
+     W;   L GKKKiK DK.KK WEE.:W,.KtKKKK :EKK D
+     D, :EE GKK.WK KK WK.EK,:   .WKLKKK  .  .W
+     . KE.  GE;KKK.Kf ;WK,L.E;  KKKWGKK  KWK L
+      K:  . L;EKKKK. K. KED;jE E.KKEKKK E .  :
+            :EKEEKtiKKKL iGG.K.K.KKKKKL  i Gi .
+         D  GWEKGK.KKKKK;KWKtK.K;KKEWKW   GK  ,
+      .GE   GKKKKK; LW,,jKKWK..KKWKEWKK  iK K ,
+      tGKW  GKEKKK , D:, KK;:jtK KKWKEK       :
+     .G;. . GKWKKK. .D;fjK:GLEDW KEKK,W if  ..
+     ,.   L.LKKKLK KWWKK K  K  WLKKKKKG , tKKL
+     K. fKE LKKLKKG.WK W.KWKDE; KKK,EKW   . .W
+     K K.: f EGKKELjD ;; K. Wj EKKKKKK  KD   G
+     :., DEW  KKKKjWK.WKEKEWK  W:KKKK    ;KE
+      K KD  .  KWKKL.iKKKKKKK ;K:EfW       iL
+      j   ;E   .LKKWKWKKKKKKKKWKKKW   W.    D
+       W .LL j   KKKK;KK:KEKKKKKKK.  :.EKK,G
+       . j,D .   .KKKKKKEKWKKK;KK          t
+        K K       .KiKKKWKKWKKDK        G K
+         D          WKKKKKKjKKW; .      :;
+          ;    f               :E.  t   ti
+          t,       K  .j   i;  ;W       t
+            K.    E   K.K  ;i   GK.   Di
+             W.   K   K K  WE  ..K   W.
+            . K. K.    :G  G.W  WK.:K
+                K;    WE.  KD.   jK
+                  EK.   .   . ;WE
+                     .fKKKWDj.
+
+                   code by 周杰伦
+                   wechat  18218277728
+</pre>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="plugins/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon218877.ico" rel="Shortcut Icon">
+    <link href="css/register.css" rel="stylesheet" type="text/css">
+    <script src="plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="plugins/semantic/dist/semantic.min.js"></script>
+    <title>微信公众平台</title>
+    <style>
+        body{
+            min-width: 1200px;
+            background: #e7e8eb;
+            font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+
+        }
+        h4{
+            font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+   <div class="head" id="myhead">
+       <div class="inner wrp">
+          <h1 style="padding-top: 10px">
+              <a href="/" title="微信公众平台"></a>
+          </h1>
+       </div>
+   </div>
+   <div class="body">
+       <div class="contain-box">
+           <div class="ui grid stepItems" style="background: white">
+
+              <div class="four wide column step_item">
+                  <h4>1&nbsp;&nbsp;基本信息</h4>
+              </div>
+              <div class="four wide column step_item step_item_next">
+                  <h4>2&nbsp;&nbsp;邮箱激活</h4>
+              </div>
+              <div class="four wide column step_item step_item_next">
+                  <h4>3&nbsp;&nbsp;选择类型</h4>
+              </div>
+              <div class="four wide column step_item step_item_next">
+                  <h4>4&nbsp;&nbsp;信息登记</h4>
+              </div>
+
+           </div>
+           <div class="ui grid" style="background: #fff;border-top: 1px solid rgb(231, 232, 235)">
+               <div class="eleven wide column" style="margin-top: 60px;margin-bottom: 60px;padding-left: 120px;border-right: 1px solid #e7e7eb;">
+                   <div class="frm_title_tips" style="margin-bottom: 45px;">
+                       <i class="msg_info"></i>
+                       每个邮箱仅能申请一种帐号：公众号或企业号
+                   </div>
+                   <form id="myform" class="ui form form1">
+                       <div class="inline fields" style="margin-bottom: 0px;">
+                           <div class="eleven wide field">
+                               <label style="width: 75px;font-size: 14px;color: #222;font-weight: normal;">邮箱</label>
+                               <input type="email" id="email" name="email">
+                           </div>
+                       </div>
+                       <div id="email-msg" class="form-message" style="margin-bottom: 40px">
+                           作为登录帐号，请填写未被微信公众平台注册，未被微信开放平台注册，未被个人微信号绑定的邮箱
+                       </div>
+                       <div class="inline fields" style="margin-bottom: 0px;">
+                           <div class="eleven wide field">
+                               <label style="width: 75px;font-size: 14px;color: #222;font-weight: normal;">密码</label>
+                               <input type="password" name="password">
+                           </div>
+                       </div>
+                       <div class="form-message" style="margin-bottom: 40px">
+                           字母、数字或者英文符号，最短8位，区分大小写
+                       </div>
+                       <div class="inline fields" style="margin-bottom: 0px;">
+                           <div class="eleven wide field">
+                               <label style="width: 75px;font-size: 14px;color: #222;font-weight: normal;">确认密码</label>
+                               <input type="password" name="confirm_password">
+                           </div>
+                       </div>
+                       <div class="form-message" style="margin-bottom: 40px">
+                           请再次输入密码
+                       </div>
+
+                       <div class="inline fields" style="margin-bottom: 40px">
+                           <label style="font-weight: normal;font-size: 14px;">账号类型</label>
+                           <div class="field">
+                               <div class="ui radio checkbox">
+                                   <input type="radio" name="accountType" checked="" tabindex="0" class="hidden">
+                                   <label>公众号</label>
+                               </div>
+                           </div>
+                           <div class="field">
+                               <div class="ui radio checkbox">
+                                   <input type="radio" name="accountType" tabindex="0" class="hidden">
+                                   <label>微信号</label>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="inline fields" style="margin-bottom: 0px;">
+                           <div class="eleven wide field">
+                               <label style="width: 75px;font-size: 14px;color: #222;font-weight: normal;">验证码</label>
+                               <input type="text">
+                           </div>
+                       </div>
+                       <div class="form-message" style="margin-bottom: 40px">
+
+                       </div>
+
+                           <div class="eleven wide center inline field" style="text-align: center;border-top: 1px solid #e7e7eb;padding-top: 40px;">
+                               <button type="submit" class="ui button" style="font-family:'Helvetica Neue','Hiragino Sans GB','Microsoft YaHei','\9ED1\4F53',Arial,sans-serif;font-weight: normal;padding-left: 30px;padding-right: 30px">注&nbsp;&nbsp;册</button>
+                           </div>
+
+                   </form>
+               </div>
+               <div class="five wide column">
+                   <p style="text-align: center;margin-top: 60px;">
+                       已有微信公众账号？
+                       <a href="#">立即登录</a>
+                   </p>
+               </div>
+           </div>
+
+       </div>
+   </div>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $('.ui.radio.checkbox')
+                .checkbox()
+        ;
+        $('#myform').form({
+            fields: {
+                email: {
+                    identifier: 'email',
+                    rules: [
+                        {
+                            type: 'email',
+                        }
+                    ]
+                },
+                password: {
+                    identifier: 'password',
+                    rules: [
+                        {
+                            type   : 'empty',
+                        }
+                    ]
+                },
+                confirm_password:{
+                    identifier: 'confirm_password',
+                    rules: [
+                        {
+                            type   : 'empty',
+                        }
+                    ]
+                },
+                match: {
+                    identifier  : 'confirm_password',
+                    rules: [
+                        {
+                            type   : 'match[password]',
+                        }
+                    ]
+                },
+            },
+            on:'blur',
+            onSuccess: function(event, fields) {
+                alert("kobe");
+                console.log("fsdf");
+            }
+        });
+        $("#email").blur(function(){
+           if(!$(this).parent().hasClass('error'))
+                   console.log("通过");
+        });
+
+    });
+</script>
+</html>

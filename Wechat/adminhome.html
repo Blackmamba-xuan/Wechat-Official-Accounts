@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="plugins/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon218877.ico" rel="Shortcut Icon">
+    <link href="css/register.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/adminhome.css" type="text/css">
+    <script src="plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="plugins/semantic/dist/semantic.min.js"></script>
+    <title>微信公众平台</title>
+</head>
+<body>
+<!--下面是导航栏-->
+<div class="head" id="myhead">
+    <div class="inner wrp">
+        <h1 style="padding-top: 10px;width: 250px;float: left">
+            <a href="/" title="微信公众平台"></a>
+        </h1>
+        <div class="account" style="float: right;padding-top: 10px;">
+            <div class="account_meta account_info account_meta_primary">
+                <a class="nickname">BLackmambaxuan</a>
+                <span class="type_wrp">
+                    <a class="type icon_subscribe_label">订阅号</a>
+                    <a class="type icon_verify_label fail">未认证</a>
+                </span>
+                <a href="#">
+                    <img src="images/logo.jpg" class="avatar">
+                </a>
+            </div>
+            <div class="account_meta account_logout account_meta_primary">
+                <a id="logout" href="#">退出</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--下面是主体部分-->
+<div class="body page_media_list page_appmsg_list">
+<div class="container_box cell_layout side_l">
+   <div class="col_side">
+       <div class="menu_box">
+           <!--下面是功能列表-->
+           <dl class="menu no_extra">
+              <dt class="menu_title">
+                  <i class="icon_menu" style="background:url('images/icon_menu_function.png') no-repeat; "></i>
+                  功能
+              </dt>
+               <dd class="menu_item">
+                   <a href="#">群发功能</a>
+               </dd>
+               <dd class="menu_item">
+                   <a href="#">自动回复</a>
+               </dd>
+               <dd class="menu_item">
+                   <a href="#">自定义菜单</a>
+               </dd>
+               <dd class="menu_item">
+                   <a href="#">投票管理</a>
+               </dd>
+               <dd class="menu_plugins" style="box-sizing: content-box">
+                   <a href="#" class="btn_plugins_add">添加功能插件</a>
+               </dd>
+           </dl>
+           <!--下面是管理列表-->
+           <dl class="menu">
+               <dt class="menu_title">
+                   <i class="icon_menu" style="background: url('images/icon_menu_management.png')"></i>
+                   管理
+               </dt>
+               <dd class="menu_item">
+                   <a href="#">消息管理</a>
+               </dd>
+               <dd class="menu_item">
+                   <a href="#">用户管理</a>
+               </dd>
+               <dd class="menu_item selected">
+                   <a href="#">素材管理</a>
+               </dd>
+           </dl>
+       </div>
+   </div>
+    <div class="col_main">
+       <div class="main_hd" style="border-bottom: 1px solid #e7e7eb;">
+           <h2>素材管理</h2>
+       </div>
+        <div class="main_bd" style="padding-top: 0px;">
+           <div class="sub_title_bar">
+               <div class="info">
+                  <h3 class="page_title">
+                      <span>图文消息</span>
+                      (共
+                      <span id="js_count">1</span>
+                      条)
+                  </h3>
+                   <div class="rank_style">
+                       <a class="btn_card_rank current" href="#"></a>
+                       <a href="#" class="btn_list_rank"></a>
+                   </div>
+               </div>
+               <a href="#" class="btn btn_add btn_primary r btn_new">
+                   <i class="icon14_common add_white"></i>
+                   新建图文消息
+               </a>
+           </div>
+            <div class="appmsg_list">
+               <div class="appmsg_col tj_item">
+                  <div class="">
+                      <div class="js_appmsgitem">
+                          <div class="appmsg single has_first_cover">
+                              <div class="appmsg_content">
+                                  <div class="appmsg_info">
+                                      <em class="appmsg_date">09月28日</em>
+                                  </div>
+                                  <div class="appmsg_item">
+                                      <h4 class="appmsg_title js_title">
+                                          <a href> 如何下载付费歌曲</a>
+                                      </h4>
+                                      <div class="appmsg_thumb_wrp" style="background: url('images/0.jpg')">
+                                      </div>
+                                      <p class="appmsg_desc">测试文章，慎点</p>
+                                      <a href class="edit_mask preview_mask js_preview">
+                                          <div class="edit_mask_content" style="margin-top: 100px">
+                                              <p>预览文章</p>
+                                              <span class="vm_box"></span>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="appmsg_opr">
+                                  <ul>
+                                    <li class="appmsg_opr_item grid_item size1of2">
+                                        <a href class="js_tooltip">
+                                            <i class="icon18_common edit_gray">编辑</i>
+                                        </a>
+                                    </li>
+                                      <li class="appmsg_opr_item grid_item size1of2 no_extra">
+                                          <a href class="js_del no_extra js_tooltip">
+                                              <i class="icon18_common del_gray">删除</i>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

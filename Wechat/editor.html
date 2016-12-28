@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="plugins/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon218877.ico" rel="Shortcut Icon">
+    <link href="css/register.css" rel="stylesheet" type="text/css">
+    <link href="css/editor.css" rel="stylesheet" type="text/css">
+    <script src="plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="plugins/semantic/dist/semantic.min.js"></script>
+    <script src="js/editor.js"></script>
+    <title>编辑图文消息</title>
+    <script type="text/javascript">
+        var editorDoc;
+        function InitEditable () {
+            var editor = document.getElementById ("editor");
+            editorDoc = editor.contentWindow.document;
+            var editorBody = editorDoc.body;
+            // turn off spellcheck
+            if ('spellcheck' in editorBody) {    // Firefox
+                editorBody.spellcheck = false;
+            }
+            if ('contentEditable' in editorBody) {
+                // allow contentEditable
+                editorBody.contentEditable = true;
+            }
+            else {  // Firefox earlier than version 3
+                if ('designMode' in editorDoc) {
+                    // turn on designMode
+                    editorDoc.designMode = "on";
+                }
+            }
+        }
+        function ToggleBold () {
+            editorDoc.execCommand ('bold', false, null);
+        }
+    </script>
+</head>
+<body onload="InitEditable ();">
+<div class="head" id="myhead">
+    <div class="inner wrp">
+        <h1 style="padding-top: 10px;width: 250px;float: left">
+            <a href="/" title="微信公众平台"></a>
+        </h1>
+        <div class="account" style="float: right;padding-top: 10px;">
+            <div class="account_meta account_info account_meta_primary">
+               <a class="nickname">BLackmambaxuan</a>
+                <span class="type_wrp">
+                    <a class="type icon_subscribe_label">订阅号</a>
+                    <a class="type icon_verify_label fail">未认证</a>
+                </span>
+                <a href="#">
+                    <img src="images/logo.jpg" class="avatar">
+                </a>
+            </div>
+            <div class="account_meta account_logout account_meta_primary">
+               <a id="logout" href="#">退出</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="body page_simple page_appmsg_new">
+  <div class="container_box">
+     <div class="js_main_title main_hd">
+       <div class="page_nav">
+           <a class="icon_goback">返回上一层</a>
+           <a href="#">素材库</a>
+           <span class="gap">/</span>
+           新建图文消息
+       </div>
+     </div>
+      <div class="main_bd">
+          <div class="appmsg_edit_box">
+              <div class="appmsg_edit_mod default appmsg_preview_area">
+                <div class="appmsg_edit_container appmsg_preview_container js_aside" style="height:645px">
+                  <div class="scroll-wrapper js_scrollbar scrollbar-macosx" style="position: relative; max-height: 609px;">
+                      <div class="js_scrollbar scrollbar-macosx scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 306px;">
+                         <div class="appmsg_container_hd">
+                             <h4 class="appmsg_container_title">图文列表</h4>
+                         </div>
+                          <div class="appmsg_container_bd">
+                            <div class="appmsg multi has_first_cover editing" >
+                              <div class="appmsg_content" id="js_appmsg_preview" style="background: url('images/logo.jpg')">
+                                  <div class="appmsg_thumb default">
+                                      <i class="icon_appmsg_thumb"></i>
+                                  </div>
+
+                              </div>
+                            </div>
+                              <a class="create_access_primary appmsg_add">
+                                  <i class="icon35_common add_gray">
+                                      增加一条
+                                  </i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="appmsg_edit_mod default appmsg_tpl_area">
+                <div class="appmsg_edit_container appmsg_tpl_container js_aside">
+                  <div class="scroll-wrapper js_scrollbar scrollbar-macosx" style="position: relative; max-height: 724px;">
+                     <div class="js_scrollbar scrollbar-macosx scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 328px;">
+                         <div class="appmsg_container_hd"><h4>多媒体</h4></div>
+                         <div class="appmsg_container_bd">
+                           <ul class="tpl_list">
+                             <li class="tpl_item img">
+                                 <i class="icon_media_choose"></i>
+                                 图片
+                             </li>
+                             <li class="tpl_item video">
+                                 <i class="icon_media_choose"></i>
+                                 视频
+                             </li>
+                               <li class="tpl_item music">
+                                   <i class="icon_media_choose"></i>
+                                   音乐
+                               </li>
+                           </ul>
+                             <input type="file" style="position: absolute;opacity: 0; filter: 'alpha(opacity=0)';filter: 'alpha(opacity=0);'">
+                         </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="appmsg_edit_mod primary appmsg_input_area">
+                  <div class="appmsg_editor_wrp">
+                     <div class="appmsg_editor">
+                       <div class="appmsg_editor_inner">
+                         <div class="appmsg_edit_item content_edit">
+                            <div class="edui_editor_wrp edui-default">
+                                <div class="edui-editor  edui-default" style="z-index: 999;">
+                                   <!--下面是工具栏-->
+                                    <div class="edui-editor-toolbarbox show-edui-more edui-default" style="margin-left: 0px">
+                                        <div class="edui-editor-toolbarboxouter edui-default">
+                                            <div class="edui-editor-toolbarboxinner edui-default">
+                                                <div class="edui-toolbar  edui-toobar-secondary edui-default" style="user-select: none">
+                                                    <div class="edui-box edui-button edui-for-bold edui-default">
+                                                      <div class="edui-default">
+                                                          <div class="edui-button-wrap edui-default">
+                                                              <div>
+                                                                    <div class="edui-box edui-icon edui-default" id="toblod">
+
+                                                                    </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="edui-box edui-button edui-for-italic edui-default">
+                                                        <div class="edui-default">
+                                                          <div class="edui-button-wrap edui-default">
+                                                              <div class="edui-button-body js_tooltip edui-default">
+                                                                   <div class="edui-box edui-icon edui-default" id="toItalic">
+
+                                                                   </div>
+                                                              </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="edui-box edui-button edui-for-underline edui-default">
+                                                        <div class="edui-default">
+                                                            <div class="edui-button-wrap edui-default">
+                                                                <div class="edui-button-body js_tooltip edui-default">
+                                                                    <div class="edui-box edui-icon edui-default" id="toU" style="">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="edui-box edui-separator  edui-default">
+
+                                                    </div>
+                                                    <select id="changesize" class="ui dropdown" style="font-size: 12px;padding: 5px;" onchange="changesize()">
+                                                        <option value="1">8px</option>
+                                                        <option value="2">10px</option>
+                                                        <option value="3">12px</option>
+                                                        <option value="4">14px</option>
+                                                        <option value="5">16px</option>
+                                                        <option value="6">18px</option>
+                                                        <option value="7">20px</option>
+                                                    </select>
+
+                                                    <div class="edui-box edui-separator  edui-default">
+
+                                                    </div>
+                                                    <div style="display: inline-block;position: relative">
+                                                        <select id="changecolor" class="ui dropdown" style="font-size: 6px;padding: 5px;" onchange="changecolor()">
+                                                            <option value="rgb(0, 0, 0)">black</option>
+                                                            <option value="rgb(255, 76, 65)">red</option>
+                                                            <option value="rgb(0, 82, 255)">blue</option>
+                                                            <option value="rgb(255, 104, 39)">orange</option>
+                                                        </select>
+                                                        <div class="edui-colorlump" style="background: black">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="mpeditor_global_tips edui-default">
+                                           <span class="mini_tips icon_after weak_text edui-default">
+                                                  自动保存
+                                               <i class="icon16_common waiting_gray edui-default"></i>
+                                           </span>
+                                        </div>
+                                    </div>
+                                    <!--下面是输入标题-->
+                                    <div class="appmsg_edit_item title frm_input_box edui-default with_counter counter_in append count">
+                                        <input id="mytitle" type="text" class="frm_input js_title js_counter js_field edui-default" max-length="64" placeholder="请在这里输入标题" style="font-family: 'Helvetica Neue','Hiragino Sans GB','Microsoft YaHei','\9ED1\4F53',Arial,sans-serif;">
+                                        <em class="frm_input_append frm_counter" style="display: none;top: 20px;">0/64</em>
+                                    </div>
+                                    <!--下面输入作者-->
+                                    <div class="appmsg_edit_item author frm_input_box edui-default with_counter counter_in append count">
+                                       <input id="myauthor" type="text" class="frm_input js_author js_counter js_field edui-default" placeholder="请输入作者">
+                                    </div>
+                                    <!--下面是输入正文-->
+                                    <div class="editor_area edui-default" style="">
+                                       <div class="split_line edui-default">
+
+                                       </div>
+                                        <div class="edui-editor-iframeholder edui-default" style="height: 400px;padding-left: 90px;">
+                                            <iframe id="editor" src="editable.html" frameborder="0" width="100%" height="100%"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+                  <div class="tool_area_wrp">
+                    <div class="js_bot_bar tool_area">
+                        <div class="tool_bar">
+                            <span class="mini_tips icon_before l fold_tips">
+                                <i class="icon_appmsg_edit_folder"></i>
+                                <span>收起全文</span>
+                            </span>
+                            <span class="btn btn_input btn_default r">
+                                <button type="button">
+                                    保存并群发
+                                </button>
+                            </span>
+                            <span class="btn btn_input btn_default r">
+                                <button type="button">
+                                    预览
+                                </button>
+                            </span>
+                            <span class="btn btn_input btn_primary r">
+                                <button id="mysend" type="button">
+                                    保存
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+<script>
+    $("#toblod").click(function () {
+        editorDoc.execCommand ('bold', false, null);
+    });
+    $("#toItalic").click(function(){
+        //editorDoc.execCommand ("FontSize","false","16px");
+        editorDoc.execCommand('italic', false, null);
+    });
+    $("#toU").click(function () {
+        //$(editorDoc.body).append("<div style='width: 100%;height: 100px;text-align: center'><img src='images/0.jpg' width='400' height='400'></div><div>1111</div>");
+        $(editorDoc.body).append("<img src='images/0.jpg' width='400' height='400' style='display: inline-block;margin-left: auto;margin-right: auto'><div>1111</div>");
+    });
+    $(document).ready(function () {
+
+        $("#mysend").click(function () {
+            alert($(editorDoc.body).html());
+            alert(document.getElementById('js_appmsg_preview').style.backgroundImage);
+        });
+    });
+    function changesize() {
+        editorDoc.execCommand ("fontSize","false",$("#changesize").val());
+    }
+    function changecolor(){
+        editorDoc.execCommand ("foreColor","false",$("#changecolor").val());
+        $(".edui-colorlump").css("background",$("#changecolor").val());
+    }
+</script>
+</html>

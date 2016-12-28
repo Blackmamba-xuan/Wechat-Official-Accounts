@@ -1,0 +1,776 @@
+body{
+    min-width: 1200px;
+    background: #e7e8eb;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+
+}
+h4{
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+h3{
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    font-weight: normal;
+}
+.head{
+    border-top: 4px solid #44b549;
+    background-color: #fff;
+}
+#myhead > div > h1 > a:before{
+    display: inline-block;
+    content: url('../images/bg_logo.png');
+}
+.inner{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height:60px;
+}
+.account_meta{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+}
+.account_info{
+    position: relative;
+    min-width: 80px;
+}
+.account_info .nickname{
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 18px;
+    color: #222;
+}
+.account_info .type_wrp{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    font-size: 14px;
+}
+.account_info .type_wrp .type{
+    vertical-align: top;
+
+}
+.account_meta_primary a{
+    color: #222;
+}
+.icon_subscribe_label{
+    background: url("../images/layout_head.png") 0 0 no-repeat;
+    width: 38px;
+    height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 100px;
+    overflow: hidden;
+}
+.type.icon_verify_label.fail{
+   background: url("../images/layout_head.png") 0 -36px no-repeat;
+    vertical-align: top;
+}
+.icon_verify_label{
+    width: 37px;
+    height: 14px;
+    display: inline-block;
+    line-height: 100px;
+    overflow: hidden;
+}
+.account_info .avatar{
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 38px;
+    height: 38px;
+    background-color: #f0f0f0;
+}
+.account_logout a{
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 16px;
+    margin-top: 18px;
+    padding-left: 14px;
+    border-left: 1px solid #e7e7eb;
+}
+.container_box{
+    min-height: 700px;
+    border: 1px solid #d9dadc;
+    background-color: #fff;
+}
+.page_appmsg_new .main_hd{
+    background-color: #fff;
+}
+.container_hd, .main_hd{
+    line-height: 40px;
+}
+.page_appmsg_new .main_hd .page_nav{
+    margin: 0;
+    padding: 6px 20px;
+    border-bottom: 1px solid #e7e7eb;
+}
+.page_nav .icon_goback{
+    margin-right: 5px;
+    color: #8d8d8d;
+}
+.icon_goback{
+    background: url("../images/base_z.png") 0 -2194px no-repeat;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 100px;
+    overflow: hidden;
+}
+.page_nav a, .page_nav .gap{
+    color: #8d8d8d;
+}
+.appmsg_edit_box{
+    position: relative;
+}
+.appmsg_preview_area{
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+body.edit_fixed .appmsg_preview_container{
+    left: auto;
+}
+body.edit_fixed .appmsg_edit_container, body.edit_fixed .edui-editor-toolbarbox{
+    top: 53px;
+}
+body.edit_fixed .main_hd, body.edit_fixed .appmsg_edit_container{
+    position: fixed;
+    z-index: 2;
+}
+.appmsg_preview_container{
+    width: 250px;
+    border-right: 1px solid #e7e7eb;
+    background-color: #f8f8f8;
+}
+.scroll-wrapper{
+    overflow: hidden!important;
+    padding: 0!important;
+}
+.scroll-wrapper>.scroll-content{
+    border: none!important;
+    box-sizing: content-box!important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none!important;
+
+    padding: 0;
+    position: relative!important;
+    top: 0;
+    width: auto!important;
+}
+.appmsg_container_hd{
+    padding: 10px 20px 0;
+}
+.appmsg_container_title{
+    font-weight: 400;
+}
+.appmsg_container_bd{
+    padding: 20px;
+}
+.appmsg_preview_container .appmsg{
+    overflow: visible;
+    margin-bottom: 0;
+}
+.appmsg{
+    position: relative;
+    border: 1px solid #e7e7eb;
+    background-color: #fff;
+    color: #666;
+}
+.multi .appmsg_content{
+    padding: 0;
+}
+.appmsg_preview_container .appmsg_content{
+    min-height: 134px;
+    margin-top: -1px;
+}
+.appmsg_content{
+    position: relative;
+}
+
+.icon_appmsg_thumb {
+    background: url("../images/media_.png") 0 -88px no-repeat;
+    width: 44px;
+    height: 34px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 300px;
+    overflow: hidden;
+}
+.editing .appmsg_thumb.default{
+    display: block;
+    line-height:120px;
+    text-align: center;
+    width:100%;
+}
+.appmsg_preview_container .appmsg_add{
+    margin: 0;
+    border-top-width: 0;
+    line-height: 90px;
+}
+.create_access_primary{
+    display: block;
+    border: 2px dotted #d9dadc;
+    font-size: 0;
+    text-align: center;
+}
+.icon35_common.add_gray{
+    background: url("../images/base_z.png") 0 -2459px no-repeat;
+}
+.create_access_primary i{
+    cursor: pointer;
+    line-height: 300px;
+    overflow: hidden;
+    font-style: italic;
+}
+.icon35_common{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.appmsg_tpl_area{
+    position: absolute;
+    right: 1px;
+    width: 210px;
+    height: 100%;
+}
+.appmsg_tpl_container{
+    width: 210px;
+    border-left: 1px solid #e7e7eb;
+    background-color: #fff;
+    height: 645px;
+}
+.scroll-wrapper{
+    overflow: hidden!important;
+    padding: 0!important;
+}
+.scroll-wrapper>.scroll-content{
+    border: none!important;
+    box-sizing: content-box!important;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    padding: 0;
+    position: relative!important;
+    top: 0;
+    width: auto!important;
+}
+.appmsg_tpl_area .tpl_list{
+    border: 1px solid #e7e7eb;
+    border-top-width: 0;
+}
+ul, ol{
+    padding-left: 0;
+    list-style-type: none;
+
+}
+.appmsg_tpl_area .tpl_item{
+    border-top: 1px solid #e7e7eb;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 50px;
+    cursor: pointer;
+}
+li{
+    display: list-item;
+}
+.appmsg_tpl_area .tpl_item.img .icon_media_choose{
+    background: url("../images/appmsg_new_z.png") 0 -20px no-repeat;
+}
+.appmsg_tpl_area .tpl_item .icon_media_choose{
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1em;
+
+}
+.appmsg_tpl_area .tpl_item:hover{
+    border: 1px solid #43b548;
+    margin: 0 -1px -1px;
+    position: relative;
+    z-index: 1;
+    color: #43b548;
+    zoom: 1;
+}
+.appmsg_tpl_area .tpl_item:hover.img .icon_media_choose{
+    background: url("../images/appmsg_new_z.png") 0 -228px no-repeat;
+}
+.appmsg_tpl_area .tpl_item.video .icon_media_choose{
+    background: url("../images/appmsg_new_z.png") 0 -46px no-repeat;
+}
+.appmsg_tpl_area .tpl_item:hover.video .icon_media_choose{
+    background: url("../images/appmsg_new_z.png") 0 -254px no-repeat;
+}
+.appmsg_tpl_area .tpl_item:hover.music .icon_media_choose{
+    background: url("../images/appmsg_new_z.png") 0 -332px no-repeat;
+}
+.appmsg_tpl_area .tpl_item.music .icon_media_choose{
+    background: url("../images/appmsg_new_z.png") 0 -124px no-repeat;
+}
+.appmsg_input_area{
+    margin: 0 211px 0 251px;
+    position: relative;
+}
+.appmsg_input_area .appmsg_editor_wrp{
+    min-height: 560px;
+}
+.appmsg_input_area .appmsg_editor_inner{
+    padding: 0;
+}
+.appmsg_edit_item.content_edit{
+    padding-bottom: 0px;
+}
+.appmsg_input_area .edui_editor_wrp{
+    position: relative;
+    z-index: 0;
+    min-height: 320px;
+}
+.appmsg_input_area .edui-default .edui-editor{
+    border-width: 0;
+}
+.edui-default .edui-editor{
+    border: 1px solid #e7e7eb;
+    background-color: white;
+    position: relative;
+    overflow: visible;
+}
+.edui-default .edui-editor-toolbarbox{
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+.edui-default .edui-editor-toolbarboxouter{
+    background-color: #fff;
+    background-repeat: repeat-x;
+    border-bottom: 0;
+}
+.edui-default .edui-editor-toolbarboxinner{
+    position: relative;
+    min-height: 28px;
+}
+.appmsg_input_area .edui-default .edui-toolbar-primary{
+    padding-bottom: 0;
+    border-bottom-width: 0;
+}
+.edui-default .edui-toolbar .edui-button, .edui-default .edui-toolbar .edui-splitbutton, .edui-default .edui-toolbar .edui-menubutton, .edui-default .edui-toolbar .edui-combox{
+    margin: 1px;
+}
+.edui-default .edui-box{
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+div.edui-box{
+    position: relative;
+    display: inline-block!important;
+    vertical-align: middle;
+}
+.edui-default .edui-toolbar .edui-button .edui-button-wrap{
+    position: relative;
+}
+.edui-button .edui-button-wrap, .edui-splitbutton .edui-splitbutton-body, .edui-menubutton .edui-menubutton-body, .edui-combox .edui-combox-body{
+    border: 1px solid transparent;
+}
+.edui-default .edui-button-body, .edui-splitbutton-body, .edui-menubutton-body, .edui-combox-body{
+    position: relative;
+    font-size: 0;
+}
+.edui-default .edui-for-bold .edui-icon{
+   background: url("../images/ueditor_z.png") 0 -228px no-repeat;
+}
+.edui-toolbar .edui-button .edui-icon, .edui-toolbar .edui-menubutton .edui-icon, .edui-toolbar .edui-splitbutton .edui-icon{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.edui-default .edui-box{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+div.edui-box{
+    position: relative;
+    display: inline-block!important;
+
+}
+.show-edui-more .edui-default .edui-toolbar.edui-toobar-secondary{
+    display: block;
+}
+.appmsg_input_area .edui-default .edui-toolbar{
+    padding: 10px 45px;
+}
+.edui-default .edui-toolbar{
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    padding: 1px;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+}
+.edui-toolbar{
+    border-bottom: 1px solid #e7e7eb;
+}
+.edui-button-wrap .edui-default:hover{
+    border:1px solid #e7e7eb;
+}
+.edui-default .edui-for-italic .edui-icon{
+    background: url("../images/ueditor_z.png") 0 -258px no-repeat;
+}
+.edui-default .edui-for-underline .edui-icon{
+    background: url("../images/ueditor_z.png") 0 -288px no-repeat;
+}
+.mpeditor_global_tips{
+    position: absolute;
+    top: 13px;
+    right: 16px;
+}
+.mini_tips.weak_text{
+    color: #8d8d8d;
+}
+.mini_tips.icon_after i{
+    margin-right: 0;
+    margin-left: 3px;
+}
+.icon16_common.waiting_gray{
+    background: url("../images/base_z.png") 0 -3260px no-repeat;
+}
+.mini_tips i{
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.icon16_common{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 100px;
+    overflow: hidden;
+}
+.appmsg_edit_item.author.frm_input_box, .appmsg_edit_item.title.frm_input_box{
+    width: auto;
+    display: block;
+    border: 0;
+    height: auto;
+    line-height: 1.6;
+}
+.appmsg_edit_item.title{
+    margin: 20px 0 15px;
+    padding: 0 90px;
+}
+.appmsg_edit_item.author, .appmsg_edit_item.title{
+    position: relative;
+}
+.frm_input_box{
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    width: 278px;
+    font-size: 14px;
+    padding: 0 10px;
+    border: 1px solid #e7e7eb;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #fff;
+}
+.appmsg_edit_item.title .frm_input{
+    font-size: 22px;
+    height: 46px;
+    line-height: 46px;
+}
+.appmsg_edit_item.author .frm_input, .appmsg_edit_item.title .frm_input{
+    position: relative;
+    z-index: 1;
+}
+.frm_input{
+    height: 22px;
+    margin: 4px 0;
+}
+.frm_input, .frm_textarea{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+textarea, input{
+    color: #222;
+}
+button, input, select, textarea{
+    font-family: inherit;
+}
+fieldset, legend, textarea, input{
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+input, textarea, keygen, select, button{
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+input, textarea, keygen, select, button, meter, progress{
+    -webkit-writing-mode: horizontal-tb;
+}
+.appmsg_edit_item.title .frm_counter{
+    top: 20px;
+}
+.appmsg_edit_item.author .frm_counter, .appmsg_edit_item.title .frm_counter{
+    right: 10px;
+}
+.frm_input_box.counter_in .frm_counter{
+    right: 0;
+    text-align: right;
+    padding-right: 10px;
+}
+.frm_input_box.with_counter .frm_counter{
+    width: 50px;
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+.frm_input_box.append .frm_input_append{
+    position: absolute;
+    top: 0;
+    right: .8em;
+}
+.appmsg_edit_item.author{
+    margin: 15px 0 10px;
+    padding: 0 90px 10px;
+    padding-top: 0px;
+    padding-right: 90px;
+    padding-bottom: 10px;
+    padding-left: 90px;
+}
+#myauthor{
+    font-size: 14px;
+    font-family:"Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+}
+.appmsg_input_area .editor_area .split_line{
+    border-top: 1px solid #e7e7eb;
+    margin: 0 90px;
+}
+.page_appmsg_new .tool_area_wrp{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+    border-top: 1px solid #d9dadc;
+}
+.page_appmsg_new .tool_area{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tool_area{
+    padding: 0;
+}
+.page_appmsg_new .tool_bar{
+    padding: 20px 210px 20px 250px;
+    margin-top: 0;
+}
+.page_appmsg_new .tool_bar .fold_tips{
+    margin-top: 5px;
+    cursor: pointer;
+}
+.l{
+    float: left;
+}
+.page_appmsg_new .icon_appmsg_edit_folder{
+    background: url("../images/appmsg_new_z.png") 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 300px;
+    overflow: hidden;
+}
+.mini_tips i{
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.tool_bar .btn.r{
+    margin-right: 0;
+    margin-left: 1em;
+}
+.tool_bar:after{
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.btn.btn_input{
+    min-width: 104px;
+}
+.btn.btn_input{
+    padding: 0;
+}
+.r{
+    float: right;
+}
+.btn_default{
+    background-color: #fff;
+    background-image: -moz-linear-gradient(top,#fff 0,#fff 100%);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#fff));
+    background-image: -webkit-linear-gradient(top,#fff 0,#fff 100%);
+    background-image: -o-linear-gradient(top,#fff 0,#fff 100%);
+    background-image: linear-gradient(to bottom,#fff 0,#fff 100%);
+    border-color: #e7e7eb;
+    color: #222;
+}
+.btn{
+    display: inline-block;
+    overflow: visible;
+    padding: 0 22px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 14px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+.btn.btn_input button{
+    width: 100%;
+}
+.btn_default button{
+    color: #222;
+}
+.btn button{
+    display: block;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    overflow: visible;
+    padding: 0 22px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"]{
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+button, select{
+    text-transform: none;
+}
+button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+button {
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+}
+.btn_default:hover{
+    background-color: #e7e7eb;
+    background-image: linear-gradient(to bottom,#e7e7eb 0,#e7e7eb 100%);
+    border-color: #dadbe0;
+    -webkit-box-shadow: none;
+    color: #222
+}
+.btn_primary{
+    background-color: #44b549;
+    background-image: -moz-linear-gradient(top,#44b549 0,#44b549 100%);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#44b549),to(#44b549));
+    background-image: -webkit-linear-gradient(top,#44b549 0,#44b549 100%);
+    background-image: -o-linear-gradient(top,#44b549 0,#44b549 100%);
+    background-image: linear-gradient(to bottom,#44b549 0,#44b549 100%);
+    border-color: #44b549;
+    color: #fff;
+}
+.btn_primary button{
+    width: 100%;
+    color: #fff;
+}
+.btn_primary:hover{
+    background-color: #2f9833;
+    background-image: linear-gradient(to bottom,#2f9833 0,#2f9833 100%);
+    border-color: #2f9833;
+    -webkit-box-shadow: none;
+    color: #fff;
+}
+.edui-default .edui-editor-iframeholder{
+    position: relative;
+}
+.appmsg_input_area .edui-editor-iframeholder{
+    padding: 10px 0 0;
+    min-height: 0;
+}
+.appmsg_input_area .editor_area iframe{
+    position: relative;
+    z-index: 1;
+}
+.edui-default .edui-toolbar .edui-separator{
+    width: 1px;
+    height: 20px;
+    background-color: #e7e7eb;
+    margin: 4px 2px;
+}
+.edui-colorlump{
+    position: absolute;
+    overflow: hidden;
+    bottom: 5px;
+    left: 5px;
+    width: 50px;
+    height: 3px;
+}
+
+
+
+

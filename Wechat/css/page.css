@@ -1,0 +1,40 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+    background-color: #fff;
+
+}
+@media screen and (min-width: 1025px){
+    .rich_media {
+        position: relative;
+        width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rich_media_inner{
+        position: relative;
+        background-color: #fff;
+        padding: 20px;
+        padding-bottom: 100px;
+
+    }
+
+}
+.not_in_mm .rich_media_inner{
+    position: relative;
+}
+.rich_media_title{
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #e7e7eb;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 24px;
+}
+.meta_time{
+    font-style: normal;
+    color: #8c8c8c;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}

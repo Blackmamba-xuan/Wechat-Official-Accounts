@@ -1,0 +1,284 @@
+<!--
+<pre>
+
+                    ,EWWEDEWKE.
+               . :WE       :  .KE.
+               DK ,: :     K, : : E,
+              K   ,K:G     K    EE .W
+            f: .;   KK     W    .W ; Di
+           E.:K ;  t i.    E t D Wj . ,G
+          E .  Ei  G          t  W  jf ::
+         G GE  GDj .; ,;,,,,, :  t ,K .E;j
+         j; fK  E  KK;KKKKKKW,KW  ,W  W  L.
+        E WWE:W.  KKK;KKKKKKW,KKW. , jD f;E
+       L   KW L. KKKK;WKEKKKK,KKKW   Kf .  L
+       DE.  EK  WKKKK;t  KKKK,WKKKK     EK,E
+      E EE.f  .KKKKKKKKKKKKKWKKKKKKE. KWj:i.K
+      Di.K  ..KKKKKKKtKKKKKKKKWGKKKKW   .   K
+     j    ED.KEKKKD   . jKtW,KKE.KEKKK.D;
+     W;   L GKKKiK DK.KK WEE.:W,.KtKKKK :EKK D
+     D, :EE GKK.WK KK WK.EK,:   .WKLKKK  .  .W
+     . KE.  GE;KKK.Kf ;WK,L.E;  KKKWGKK  KWK L
+      K:  . L;EKKKK. K. KED;jE E.KKEKKK E .  :
+            :EKEEKtiKKKL iGG.K.K.KKKKKL  i Gi .
+         D  GWEKGK.KKKKK;KWKtK.K;KKEWKW   GK  ,
+      .GE   GKKKKK; LW,,jKKWK..KKWKEWKK  iK K ,
+      tGKW  GKEKKK , D:, KK;:jtK KKWKEK       :
+     .G;. . GKWKKK. .D;fjK:GLEDW KEKK,W if  ..
+     ,.   L.LKKKLK KWWKK K  K  WLKKKKKG , tKKL
+     K. fKE LKKLKKG.WK W.KWKDE; KKK,EKW   . .W
+     K K.: f EGKKELjD ;; K. Wj EKKKKKK  KD   G
+     :., DEW  KKKKjWK.WKEKEWK  W:KKKK    ;KE
+      K KD  .  KWKKL.iKKKKKKK ;K:EfW       iL
+      j   ;E   .LKKWKWKKKKKKKKWKKKW   W.    D
+       W .LL j   KKKK;KK:KEKKKKKKK.  :.EKK,G
+       . j,D .   .KKKKKKEKWKKK;KK          t
+        K K       .KiKKKWKKWKKDK        G K
+         D          WKKKKKKjKKW; .      :;
+          ;    f               :E.  t   ti
+          t,       K  .j   i;  ;W       t
+            K.    E   K.K  ;i   GK.   Di
+             W.   K   K K  WE  ..K   W.
+            . K. K.    :G  G.W  WK.:K
+                K;    WE.  KD.   jK
+                  EK.   .   . ;WE
+                     .fKKKWDj.
+
+                   姓名：周杰伦
+                   wechat：18218277728
+</pre>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="plugins/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link href="images/favicon218877.ico" rel="Shortcut Icon">
+    <script src="plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="plugins/semantic/dist/semantic.min.js"></script>
+    <title>欢迎登陆网页版微信</title>
+    <style>
+        a{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<!--下面是弹窗-->
+<div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">
+        搜索公众号
+    </div>
+    <div class="image content">
+        <div class="ui image">
+            <img src="images/logo.jpg">
+        </div>
+        <div class="description">
+            <div class="ui header">这个是公众号01</div>
+            <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui black deny button">
+            不关注
+        </div>
+        <div id="follow_btn" class="ui positive right labeled icon button">
+            关注
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+<!--下面是导航栏-->
+<div class="ui massive borderless menu" style="box-shadow: none;margin-top: 0px;border: none;padding-left: 50px;padding-right: 50px;">
+    <img class="ui image" src="images/wechat.webp" style="height: 63px;width: 63px;padding: 13px;">
+    </img>
+    <div class="ui icon search category input items" style="margin-top: auto;margin-bottom: auto;">
+        <input id="search" type="text" placeholder="请输入你要搜索的公众号" style="font-size: 14px;width: 560px;border-radius: 20px;border-color: white;background: #f7f8fb">
+        <i class="search icon" style="cursor: pointer;"></i>
+    </div>
+    <div class="right menu">
+        <a href="#" class="item">
+            <i class="mail icon" style="font-size: 24px;"></i>
+            0
+        </a>
+        <a href="#" class="item">
+            <i class="talk icon" style="font-size: 24px;"></i>
+            0
+        </a>
+        <!--<a href="#" class="item">-->
+            <!--<i class="user icon" style="font-size: 24px"></i>-->
+            <!--<span style="margin-right: 15px;">我不是周杰伦</span>-->
+            <!--<img class="ui avatar image" src="images/logo.jpg">-->
+        <!--</a>-->
+        <div class="ui dropdown item">
+            <i class="user icon" style="font-size: 24px"></i>
+            <span style="margin-right: 15px;">我不是周杰伦</span>
+            <img class="ui avatar image" src="images/logo.jpg">
+            <div class="menu">
+                <a class="item">退出</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 45px;">
+    <div class="ui grid">
+        <div class="row">
+            <div class="one wide column"></div>
+            <div class="nine wide column" style="height: 300px;">
+                <div class="ui cards">
+                    <div class="card" style="background: white;width: 100%;box-shadow: none;box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.39);">
+                        <div class="content">
+                            <img class="right floated medium ui image" src="images/logo.jpg" style="position: absolute;top: -20px;right: 10px;width: 150px;height: 170px;border-radius: 8px;">
+                            <div class="header">
+                               <a href="#">这里是标题</a>
+                            </div>
+                            <div class="meta">
+                               2016-09-11
+                            </div>
+                            <div class="description" style="padding-right: 150px;">
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                                Elliot requested permission to view your contact details
+                            </div>
+                        </div>
+                        <div class="extra content middle aligned">
+
+                              <!--  <div class="ui basic green button">Approve</div>
+                                <div class="ui basic red button">Decline</div>-->
+                                <img class="ui avatar image" src="images/psb.jpg">
+                                <span>公众号01</span>
+                               <div class="right floated items middle aligned" style="margin-top: 2px;">
+                                   <a class="item" style="font-size: 18px;margin-right: 10px;">
+                                       <i class="unhide icon"></i>
+                                       10
+                                   </a>
+                                   <a class="item" style="font-size: 18px;margin-right: 10px;">
+                                       <i class="empty heart icon"></i>
+                                       10
+                                   </a>
+                                   <a class="item" style="font-size: 18px;margin-right: 10px">
+                                       <i class="comment outline icon"></i>
+                                       10
+                                   </a>
+                               </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="five wide column" style="height: 300px;padding-left: 50px;">
+              <div >
+                  <div class="ui special cards">
+
+                      <div class="card" style="width: auto;">
+                          <div class="dimmable image" style="background: white;margin: 15px;margin-bottom: 0px;">
+                              <div class="ui dimmer" style="">
+                                  <div class="content">
+                                      <div class="center">
+                                          <div class="ui primary button">修改头像</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <img class="center" src="images/psb.jpg" style="width: 220px;height: 220px;display: inline">
+                          </div>
+                          <div class="content" style="border-top-color: white;">
+                              <a class="header">我不是周杰伦</a>
+                              <div class="meta">
+                                  <span class="date">注册于2016-12-20</span>
+                              </div>
+                          </div>
+                          <div class="extra content">
+                              <a id="mysubscriptions">
+                                  <i class="users icon"></i>
+                                  2 Members
+                              </a>
+                              <div id="mylist" class="ui middle aligned selection list" style="display: none">
+                                  <div class="item">
+                                      <img class="ui avatar image" src="images/logo.jpg">
+                                      <div class="content">
+                                          <div class="header">Helen</div>
+                                      </div>
+                                      <div class="right floated middle aligned content" style="margin-top: 5px;">
+                                          <div class="center">
+                                              <a class="remove_btn" href="">取关</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img class="ui avatar image" src="images/logo.jpg">
+                                      <div class="content">
+                                          <div class="header">Christian</div>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <img class="ui avatar image" src="images/logo.jpg">
+                                      <div class="content">
+                                          <div class="header">Daniel</div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+            </div>
+            <div class="one wide column"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('.ui.dropdown').dropdown({on: 'hover'});
+        $("#mysubscriptions").click(function(){
+            $("#mylist").toggle(500);
+        });
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        });
+        $('.ui.search')
+                .search({
+                    apiSettings: {
+                        url: '//api.github.com/search/repositories?q={query}'
+                    },
+                    fields: {
+                        results : 'items',
+                        title   : 'name',
+                        url     : 'html_url'
+                    },
+                    minCharacters : 3
+                })
+        ;
+        $('#search').bind('keypress', function (event) {
+            if (event.keyCode == "13") {
+                $('.ui.modal')
+                        .modal('show')
+                ;
+            }
+        });
+        $(".remove_btn").click(function(){
+           $(this).parents(".item").remove();
+            alert("移除");
+            return false;
+        });
+        $("#follow_btn").click(function(){
+           alert("点击了关注");
+        });
+
+    });
+</script>
+</html>

@@ -1,0 +1,118 @@
+body{
+    min-width: 1200px;
+    background: white;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+
+}
+h4{
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+h3{
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    font-weight: normal;
+}
+.head{
+    border-top: 4px solid #44b549;
+    background-color: #fff;
+}
+#myhead > div > h1 > a:before{
+    display: inline-block;
+    content: url('../images/bg_logo.png');
+}
+.inner{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height:60px;
+}
+.account_meta{
+    display: inline-block;
+    vertical-align: bottom;
+    padding-top: 18px;
+}
+.account_line{
+    font-weight: 400;
+    font-style: normal;
+    color: #8d8d8d;
+    margin: 0 5px;
+    position: relative;
+    top: -1px;
+    font-size: 12px;
+}
+.mybanner{
+   background: transparent url('../images/bg_login_banner.jpg') no-repeat center center;
+    background-size: 100% 100%;
+}
+.myinner{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 460px;
+    position: relative;
+}
+.login_form{
+    float: right;
+    width:330px;
+    margin-top: 25px;
+    padding: 36px 35px 40px;
+    background-color: #fff;
+    box-sizing: content-box;
+}
+.login_form .field .input{
+    width: 100%;
+    height: 47px;
+}
+.ui.input input{
+    border-radius: 0px;
+}
+.login_form button:hover{
+    background-color: #2f9833;
+}
+.body{
+    margin-left: auto;
+    margin-right: auto;
+    width:1000px;
+}
+.notices_box{
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 90px;
+    line-height: 40px;
+    background-color: #fff;
+    border: 1px solid #e7e7eb
+}
+.notices_box dd{
+    float: left;
+    margin-left: 30px;
+}
+.notices_box dd i{
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: middle;
+    color: #d5d5d5;
+    margin-top: -0.2em;
+}
+.notices_box dd .notices_title{
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    max-width: 22em;
+}
+.label_new{
+    background: url('../images/page_login.png') 0 -158px no-repeat;
+    width: 18px;
+    height: 12px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 6px;
+}
